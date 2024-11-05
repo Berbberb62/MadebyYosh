@@ -1,6 +1,6 @@
 --[
 Learn How to Code Kid
---Yosh
+by Yosh
 
 ]]--
 
