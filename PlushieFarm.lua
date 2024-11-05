@@ -1,4 +1,4 @@
---[
+--[[
 Learn How to Code Kid
 by Yosh
 
