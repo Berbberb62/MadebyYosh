@@ -124,7 +124,42 @@ local function createButton(parent, buttonName, buttonFunc)
 
     toggleYOffset = toggleYOffset + 35
 end
+local function autoHatch()
 
+    local args = {
+    [1] = 150,
+    [2] = workspace.gameEggs.GoldenEgg,
+    [3] = "Single"
+    }
+    game:GetService("ReplicatedStorage").ServerEvents.hatchEgg:FireServer(unpack(args))
+
+
+end
+
+
+
+local function infStorage()
+
+    local args = {
+    [1] = "Angel Ice Cream Cup"
+    }
+
+    game:GetService("ReplicatedStorage").ServerEvents.deletePet:FireServer(unpack(args))
+
+
+end
+
+local function infMoney()
+
+    local args = {
+    [1] = -10000000000000000,
+    [2] = workspace.gameEggs.GoldenEgg,
+    [3] = "Single"
+    }
+    game:GetService("ReplicatedStorage").ServerEvents.hatchEgg:FireServer(unpack(args))
+
+
+end
 -- Add your toggles and buttons
 createToggle(scrollingFrame, "Auto Hatch", autoHatch)
 createToggle(scrollingFrame, "Inf Pet Storage", infStorage)
